@@ -21,8 +21,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ajaygangwa945/html-complete-tutorial-interview-guide:latest .
+          docker build -t ajaygangwar945/html-complete-tutorial-interview-guide:latest .
 
       - name: Push Docker Image
         run: |
-          docker push ajaygangwa945/html-complete-tutorial-interview-guide:latest
+          docker push ajaygangwar945/html-complete-tutorial-interview-guide:latest
