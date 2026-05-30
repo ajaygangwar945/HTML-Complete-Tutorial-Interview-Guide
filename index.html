@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Complete Tutorial & Interview Guide</title>
+  <link rel="icon" type="image/svg+xml" href="HTML5.svg" />
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0d6efd;
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+    }
+
+    nav {
+      background: #222;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 8px;
+    }
+
+    section {
+      background: #fff;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #0d6efd;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      overflow: auto;
+    }
+
+    .output {
+      border: 2px dashed #999;
+      padding: 10px;
+      background: #fafafa;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #999;
+    }
+
+    th,
+    td {
+      padding: 8px;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>HTML Complete Tutorial & Interview Guide</h1>
+    <p>Beginner to Interview Preparation</p>
+  </header>
+
+  <nav>
+    <a href="#intro">Introduction</a>
+    <a href="#structure">Structure</a>
+    <a href="#tags">Tags</a>
+    <a href="#forms">Froms</a>
+    <a href="#semantic">Semantic</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <section id="intro">
+    <h2>What is HTML?</h2>
+    <p>
+      <b>HTML (HyperText Markup Language)</b> is the standard markup language
+      used to create web pages. It provides the structure of a webpage.
+    </p>
+
+    <h3>Why HTML?</h3>
+    <ul>
+      <li>Create webpage structure</li>
+      <li>Display text, images, links, videos</li>
+      <li>Works with CSS and JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="structure">
+    <h2>HTML Page Structure</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ Content
+&lt;/body&gt;
+&lt;/html&gt;   </pre>
+
+    <table>
+      <thead>
+        <th>Tag</th>
+        <th>Purpose</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>DOCTYPE</td>
+          <td>Tells browser HTML5 is used</td>
+        </tr>
+        <tr>
+          <td>html</td>
+          <td>Root element</td>
+        </tr>
+        <tr>
+          <td>head</td>
+          <td>Metadata</td>
+        </tr>
+        <tr>
+          <td>title</td>
+          <td>Browser tab title</td>
+        </tr>
+        <tr>
+          <td>body</td>
+          <td>Visible content</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="tags">
+    <h2>Important HTML Tags</h2>
+
+    <h3>Heading Tags</h3>
+    <pre>&lt;h1&gt;Heading 1&lt;/h1&gt;</pre>
+    <div class="output">
+      <h1>Heading 1</h1>
+    </div>
+
+    <h3>Paragraph Tag</h3>
+    <pre>&lt;p&gt;Hello World&lt;/p&gt;</pre>
+    <div class="output">
+      <p>Hello World</p>
+    </div>
+
+    <h3>Anchor Tag</h3>
+    <pre>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</pre>
+    <div class="output"><a href="https://www.google.com/">Google</a></div>
+
+    <h3>Image Tag</h3>
+    <pre>&lt;img src="image.jpg" alt="image"&gt;</pre>
+    <div class="output">
+      <img src="HTML5.svg" alt="HTML5" width="100px" />
+    </div>
+
+    <h3>Formatting Tags</h3>
+    <pre>
+&lt;b&gt;Bold&lt;/b&gt; &lt;i&gt;Italic&lt;/i&gt; &lt;u&gt;Underline&lt;/u&gt;</pre>
+    <div class="output"><b>Bold</b> <i>Italic</i> <u>Underline</u></div>
+
+    <h3>Lists</h3>
+    <pre>&lt;ul&gt;&lt;li&gt;Apple&lt;/li&gt;&lt;/ul&gt;</pre>
+    <div class="output">
+      <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+      </ul>
+    </div>
+
+    <h3>Table</h3>
+    <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Marks&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ajay&lt;/td&gt;
+    &lt;td&gt;95&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+    <div class="output">
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Marks</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ajay</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Arti</td>
+            <td>98</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="forms">
+    <h2>Forms</h2>
+
+    <h3>Text Input</h3>
+    <pre>&lt;input type="text"&gt;</pre>
+    <div class="output">
+      <input type="text" placeholder="Enter Text" />
+    </div>
+
+    <h3>Radio Button</h3>
+    <pre>&lt;input type="radio" name="gender"&gt;</pre>
+    <div class="output">
+      <input type="radio" name="gender" /> Male
+      <input type="radio" name="gender" /> Female
+    </div>
+
+    <h3>Checkbox</h3>
+    <pre>
+&lt;input type="checkbox" /&gt; 
+&lt;input type="checkbox" /&gt;</pre>
+    <div class="output">
+      <input type="checkbox" /> HTML <input type="checkbox" /> CSS
+    </div>
+
+    <h3>Select</h3>
+    <pre>
+&lt;select&gt;
+    &lt;option&gt;HTML&lt;/option&gt;
+    &lt;option&gt;CSS&lt;/option&gt;
+&lt;/select&gt;</pre>
+    <div class="output">
+      <select name="" id="">
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+      </select>
+    </div>
+
+    <h3>Textarea</h3>
+    <pre>&lt;textarea rows="4"&gt;&lt;/textarea&gt;</pre>
+    <div class="output">
+      <textarea name="" id="" rows="4"></textarea>
+    </div>
+  </section>
+
+  <section id="semantic">
+    <h2>Semantic HTML</h2>
+    <p>
+      Semantic tags describe the meaning of content and improve SEO and
+      accessibility.
+    </p>
+
+    <table>
+      <thead>
+        <th>Tag</th>
+        <th>Purpose</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>header</td>
+          <td>Top section</td>
+        </tr>
+        <tr>
+          <td>nav</td>
+          <td>Navigation links</td>
+        </tr>
+        <tr>
+          <td>section</td>
+          <td>Content section</td>
+        </tr>
+        <tr>
+          <td>article</td>
+          <td>Independent content</td>
+        </tr>
+        <tr>
+          <td>aside</td>
+          <td>Sidebar</td>
+        </tr>
+        <tr>
+          <td>footer</td>
+          <td>Bottom section</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="faq">
+    <h2>Interview Questions with Answers</h2>
+    <ol>
+      <li>
+        <b>What is HTML?</b><br />HTML stands for HyperText Markup Language.
+        It is used to create the structure of web pages.
+      </li>
+      <br />
+      <li>
+        <b>Is HTML a programming language?</b><br />No. HTML is a markup
+        language because it does not contain logic, loops, or functions.
+      </li>
+      <br />
+      <li>
+        <b>What is HTML5?</b><br />HTML5 is the latest version of HTML that
+        introduced semantic tags, audio, video, canvas, and local storage.
+      </li>
+      <br />
+      <li>
+        <b>Difference between div and span?</b><br />div is a block-level
+        element, while span is an inline element.
+      </li>
+      <br />
+      <li>
+        <b>Difference between id and class?</b><br />id is unique; class can
+        be used on multiple elements.
+      </li>
+      <br />
+      <li>
+        <b>What are semantic tags?</b><br />Tags that clearly define their
+        purpose, such as header, nav, section, and footer.
+      </li>
+      <br />
+      <li>
+        <b>What are empty tags?</b><br />Tags without closing tags such as br,
+        hr, img, and input.
+      </li>
+      <br />
+      <li>
+        <b>Difference between GET and POST?</b><br />GET sends data through
+        URL, POST sends data in the request body.
+      </li>
+      <br />
+      <li>
+        <b>Why use alt attribute?</b><br />Provides alternative text if image
+        fails to load and improves accessibility.
+      </li>
+      <br />
+      <li>
+        <b>Why use same name in radio buttons?</b><br />To group radio buttons
+        so only one option can be selected.
+      </li>
+      <br />
+      <li>
+        <b>What is the difference between HTML and CSS?</b>
+        <p>
+          HTML is used to create the structure of a webpage, while CSS is used
+          to style and design the webpage.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the difference between HTML and JavaScript?</b>
+        <p>
+          HTML creates structure, CSS adds design, and JavaScript adds
+          interactivity and functionality.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the purpose of the &lt;head&gt; tag?</b>
+        <p>
+          The head tag contains metadata such as title, CSS links, JavaScript
+          files, and meta information.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the purpose of the &lt;body&gt; tag?</b>
+        <p>
+          The body tag contains all visible content displayed on the webpage.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the difference between block and inline elements?</b>
+        <p>
+          Block elements take the full width available and start on a new
+          line. Inline elements only take the required width.
+        </p>
+
+        <p>
+          Examples: div, p, h1 = Block Elements<br />
+          span, a, img = Inline Elements
+        </p>
+      </li>
+
+      <li>
+        <b>What is the difference between ul and ol?</b>
+        <p>
+          ul creates an unordered (bulleted) list while ol creates an ordered
+          (numbered) list.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the purpose of the alt attribute?</b>
+        <p>
+          The alt attribute provides alternative text when an image cannot be
+          loaded and improves accessibility.
+        </p>
+      </li>
+
+      <li>
+        <b>What is an iframe?</b>
+        <p>
+          An iframe is used to embed another webpage inside the current
+          webpage.
+        </p>
+
+        <pre>
+&lt;iframe src="page.html"&gt;&lt;/iframe&gt;
+</pre>
+      </li>
+
+      <li>
+        <b>What is the difference between id and class?</b>
+        <p>
+          id is unique and should be used only once per page. class can be
+          used for multiple elements.
+        </p>
+      </li>
+
+      <li>
+        <b>What are HTML entities?</b>
+        <p>
+          HTML entities are special codes used to display reserved characters.
+        </p>
+
+        <pre>
+&lt; = &amp;lt;
+&gt; = &amp;gt;
+&amp; = &amp;amp;
+</pre>
+      </li>
+
+      <li>
+        <b>What is the purpose of the meta tag?</b>
+        <p>
+          The meta tag provides information about the webpage such as
+          character encoding, author, and viewport settings.
+        </p>
+      </li>
+
+      <li>
+        <b>What is SEO in HTML?</b>
+        <p>
+          SEO (Search Engine Optimization) helps websites rank better in
+          search engines using proper tags, headings, meta descriptions, and
+          semantic HTML.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the difference between strong and b?</b>
+        <p>
+          Both make text bold, but strong indicates importance while b only
+          changes appearance.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the difference between em and i?</b>
+        <p>
+          Both make text italic, but em adds semantic emphasis while i only
+          changes appearance.
+        </p>
+      </li>
+
+      <li>
+        <b>What is a favicon?</b>
+        <p>A favicon is the small icon displayed in the browser tab.</p>
+      </li>
+
+      <li>
+        <b>What is the purpose of the title tag?</b>
+        <p>
+          The title tag defines the title shown in the browser tab and helps
+          SEO.
+        </p>
+      </li>
+
+      <li>
+        <b>What are semantic tags?</b>
+        <p>
+          Semantic tags clearly describe the meaning of content. Examples
+          include header, nav, section, article, aside, and footer.
+        </p>
+      </li>
+
+      <li>
+        <b>Why should semantic HTML be used?</b>
+        <p>
+          It improves readability, accessibility, SEO, and code maintenance.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the difference between radio buttons and checkboxes?</b>
+        <p>
+          Radio buttons allow only one selection from a group. Checkboxes
+          allow multiple selections.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the purpose of the name attribute in forms?</b>
+        <p>
+          The name attribute identifies form data when submitted and is used
+          to group radio buttons.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the placeholder attribute?</b>
+        <p>Placeholder displays temporary hint text inside input fields.</p>
+      </li>
+
+      <li>
+        <b>What is the required attribute?</b>
+        <p>It makes a form field mandatory before submission.</p>
+      </li>
+
+      <li>
+        <b>What is HTML5 local storage?</b>
+        <p>
+          Local storage allows websites to store data in the user's browser
+          without using a database.
+        </p>
+      </li>
+
+      <li>
+        <b>What are the new features of HTML5?</b>
+        <p>HTML5 introduced:</p>
+
+        <ul>
+          <li>Audio Tag</li>
+          <li>Video Tag</li>
+          <li>Canvas</li>
+          <li>Semantic Tags</li>
+          <li>Local Storage</li>
+          <li>Geolocation</li>
+        </ul>
+      </li>
+
+      <li>
+        <b>What is the canvas element?</b>
+        <p>
+          Canvas is used to draw graphics, charts, animations, and games using
+          JavaScript.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the difference between GET and POST?</b>
+        <p>
+          GET sends data in the URL and is less secure. POST sends data in the
+          request body and is more secure.
+        </p>
+      </li>
+
+      <li>
+        <b>What is accessibility in HTML?</b>
+        <p>
+          Accessibility means designing websites that can be used by all
+          people, including users with disabilities.
+        </p>
+      </li>
+
+      <li>
+        <b>Why is the label tag used?</b>
+        <p>
+          The label tag improves accessibility and allows users to click the
+          label text to select form controls.
+        </p>
+      </li>
+
+      <li>
+        <b>What is the difference between section and div?</b>
+        <p>section has semantic meaning while div is a generic container.</p>
+      </li>
+
+      <li>
+        <b>What are empty tags?</b>
+        <p>
+          Empty tags do not have closing tags. Examples: br, hr, img, input,
+          meta, link.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <footer>HTML Complete Tutorial & Interview Guide</footer>
+</body>
+
+</html>
